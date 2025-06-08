@@ -46,7 +46,7 @@ def parse_single_url(url:str):
     width = img_element.size.get('width')
     # 实例化超级鹰api返回坐标
     image = open('parsing_picture.png', 'rb').read()
-    chao = Chaojiying_Client('johnjincaaaa', 'wodianhua1', '969453')
+    chao = Chaojiying_Client('你的超级鹰账号', '你的超级鹰密码', '969453')
     position:str = chao.PostPic(image,9901)['pic_str']
     print(position)
     x = int(position.split(',')[0])
